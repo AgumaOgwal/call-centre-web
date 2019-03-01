@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Call Center App</title>
+    <style>
+        header {
+            background-color: lightgray;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .box {
+            width: auto;
+            height: auto;
+            /* background-color: #d9d9d9; */
+            position: fixed;
+            margin-left: -150px;
+            /* half of width */
+            margin-top: -100px;
+            /* half of height */
+            top: 50%;
+            left: 50%;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img style="height:5%; width:10%" src="/static/logo-airtel-mobile.png">
+        <h5> Call Center Console</h5>
+    </header>
+    <h3 style="text-align:center">Result</h3>
+    <table class="box" border="1px">
+        <tr>
+            <th>Number</th>
+            <th>IMSI</th>
+            <th>Generation</th>
+        </tr>
+        <tr>
+            <td>{{ number }}</td>
+            <td>{{ imsi }}</td>
+            <td>{{ gen }}</td>
+        </tr>
+    </table>
+</body>
+
+</html>

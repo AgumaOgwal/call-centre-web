@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Call Centre Console</title>
+    <style>
+            header {
+                background-color: lightgray;
+                text-align: center;
+                font-size: 30px;
+                padding: 10px;
+            }
+    
+            .box {
+                width: auto;
+                height: auto;
+                /* background-color: #d9d9d9; */
+                position: fixed;
+                margin-left: -150px;
+                /* half of width */
+                margin-top: -100px;
+                /* half of height */
+                top: 50%;
+                left: 50%;
+            }
+    
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+    
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <img style="height:5%; width:10%" src="/static/logo-airtel-mobile.png">
+            <h5> Call Center Console</h5>
+        </header>
+    <div style="text-align: center">
+        <img style="height:5%; width:10%" src="static/logo-airtel-mobile.png">
+        <form action="/login" method="post">
+            Username <br>
+            <input name="username" type="text" />
+            <br>
+            Password <br>
+            <input name="password" type="password" />
+            <br>
+            <input type="submit" value="Log In" />
+            <br>
+            Or <a href="register.html">Register</a>
+        </form>
+    </div>
+</body>
+
+</html>
